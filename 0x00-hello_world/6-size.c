@@ -3,7 +3,7 @@
 /**
  * main - print out sizes of data types in c
  *
- * Return: 0 on success
+ * Return: 0 always
  */
 
 int main(void)
@@ -14,10 +14,10 @@ int main(void)
 	long long int d;
 	float f;
 
-	printf("size of a char: %lu byte(s)\n", sizeof(a));
-	printf("size of int: %lu byte(s)\n", sizeof(b));
-	printf("size of a long int: %lu byte(s)\n", sizeof(c));
-	printf("size of a long long int: %lu byte(s)\n", sizeof(d));
-	printf("size of a float: %lu byte(s)\n", sizeof(f));
+	printf("size of a char: %i byte(s)\n", sizeof(a));
+	printf("size of int: %i byte(s)\n", sizeof(b));
+	printf("size of a long int: %i byte(s)\n", sizeof(c));
+	printf("size of a long long int: %i byte(s)\n", sizeof(d));
+	printf("size of a float: %i byte(s)\n", sizeof(f));
 	return (0);
 }
