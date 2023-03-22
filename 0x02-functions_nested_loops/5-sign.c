@@ -1,29 +1,27 @@
-#include "main.h" 
+#include "main.h"
 /**
- * print__sign - Determines if the input number
- * greater, equal or less than zero.
+ * print_sign - prints the sign of the given number +/-
+ * @n: Number to be tested
  *
- * @n: The input number as an integer.
  *
- * Return: 1 is greater than zero. 0 is zero.
- * -1 is less than zero.
+ * Return: 1 if positive and greater than zero, 0 if is Zero, and -1 if neg.
  */
 int print_sign(int n)
 {
 	if (n > 0)
 	{
-		_putchar(43);
+		_putchar('+');
 		return (1);
 	}
 	else if (n < 0)
 	{
-		_putchar(45);
+		_putchar('-');
 		return (-1);
 	}
 	else
 	{
-		_putchar(48);
+		_putchar('0');
 		return (0);
 	}
-	_putchar('\n');
 }
+
